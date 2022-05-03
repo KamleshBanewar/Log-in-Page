@@ -1,0 +1,67 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  background: #34495e;
+}
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+}
+
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/***** Style For UserName And Password *****/
+
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0; /*This Proprty Wil Remove the Border  */
+  background: none; /*This Property Will Remove The Background And Its Makes The Transfernt Content */
+  display: block;
+  margin: 20px auto; /*This Property Will Senter The Content  */
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  transition: 0.25s;
+  width: 250px;
+  /* border-color: #2ecc71; */
+}
+
+/***** Style For Submit Button  *****/
+
+.box input[type="submit"] {
+  border: 0; /*This Proprty Wil Remove the Border  */
+  background: none; /*This Property Will Remove The Background And Its Makes The Transfernt Content */
+  display: block;
+  margin: 20px auto; /*To Center The Content */
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 5px 15px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+  transition: 0.25s;
+  background: #2ecc71;
+}
